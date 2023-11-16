@@ -1,0 +1,40 @@
+<div class="container">
+<br>
+<br>
+<h1>Tous les posts Blog</h1>
+<br>
+<br>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Titre</th>
+            <th scope="col">Contenu</th>
+            <th scope="col">Summary</th>
+            <th scope="col">Url</th>
+            <th scope="col">Image</th>
+            <th scope="col">Visible</th>
+            <th scope="col">Auteur</th>
+            <th scope="col">Date de publication</th>
+            <th scope="col">Date de mise à jour</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let post of posts">
+            <td>{{post.title}}</td>
+            <td>{{post.content}}</td>
+            <td>{{post.summary}}</td>
+            <td>{{post.urlHandle}}</td>
+            <td>{{post.featuredImageUrl}}</td>
+            <td>{{post.visible}}</td>
+             <td>{{post.author}}</td>
+            <td>{{post.publishDate}}</td>
+            <td>{{post.updatedDate}}</td>
+            <td>
+                <a [routerLink]="['/admin/posts',post.id]">View</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+

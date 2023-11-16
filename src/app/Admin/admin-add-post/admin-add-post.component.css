@@ -1,0 +1,18 @@
+body {
+    background: rgb(230, 235, 230);
+
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+}
+
+form {
+    padding: 100px;
+    max-width: 800px; 
+    width: 100%;
+}
